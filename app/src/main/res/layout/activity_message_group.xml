@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageGroup">
+
+    <TextView
+        android:id="@+id/tvBanner"
+        android:text="MAD Practical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:background="@android:color/holo_purple"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="55mm"
+        android:layout_height="8mm"
+
+        android:text="GROUP 1"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@id/tvBanner"
+        app:layout_constraintStart_toStartOf="@id/tvBanner"
+        app:layout_constraintTop_toBottomOf="@id/tvBanner" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="55mm"
+        android:layout_height="8mm"
+
+        android:text="GROUP 2"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@id/tvBanner"
+        app:layout_constraintStart_toStartOf="@id/tvBanner"
+        app:layout_constraintTop_toBottomOf="@id/button1" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="411dp"
+        android:layout_height="558dp"
+        app:layout_constraintStart_toStartOf="@id/button2"
+        app:layout_constraintEnd_toEndOf="@id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:layout_editor_absoluteX="-3dp"
+
+        tools:layout_editor_absoluteY="179dp">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

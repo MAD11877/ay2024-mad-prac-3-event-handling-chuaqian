@@ -13,6 +13,10 @@
         android:theme="@style/Theme.ListActivity"
         tools:targetApi="31">
         <activity
+            android:name=".MessageGroup"
+            android:exported="false"
+            android:theme="@style/Theme.ListActivity" />
+        <activity
             android:name=".MainActivity2"
             android:exported="true">
             <intent-filter>
