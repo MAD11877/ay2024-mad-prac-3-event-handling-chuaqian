@@ -32,7 +32,7 @@ public class ListActivity extends AppCompatActivity {
         builder.setPositiveButton("View", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent = new Intent(ListActivity.this, MainActivity2.class);
+                Intent intent = new Intent(ListActivity.this, MainActivity.class);
                 startActivity(intent);
 
             }
